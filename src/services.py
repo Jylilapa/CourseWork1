@@ -1,7 +1,7 @@
-import logging
 import json
-from src.decorators import decorator_search
+import logging
 
+from src.decorators import decorator_search
 
 logger = logging.getLogger("services.log")
 file_handler = logging.FileHandler("services.log", "w")
