@@ -7,6 +7,10 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
+pandas = "^2.2.3"
+requests = "^2.32.3"
+python-dotenv = "^1.0.1"
+pytest = "^8.3.3"
 
 
 [tool.poetry.group.lint.dependencies]
@@ -24,3 +28,9 @@ exclude = 'venv'
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 119
+
+[tool.isort]
+line_length = 119
